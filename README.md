@@ -83,7 +83,9 @@ For reproducibility, readers should first install the shared dependencies above,
 
 ## Demo
 
-We present a compressed demonstration preview for the Assembly Copilot.
+We provide a compressed demonstration video for the Assembly Copilot. Please find it in [`assets/demo`](assets/demo/demo480_24fps.mp4).
+
+Here is a gif.
 
 ![Assembly Copilot demo](assets/demo/demo.gif)
 
