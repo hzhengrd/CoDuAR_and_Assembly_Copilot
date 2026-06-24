@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated paper."
+title: "A Compositional Dual-Hand Action Recognition Method for an LLM-Driven Assembly Copilot in Human-Centric Manufacturing"
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+year: 2026
+doi: "TODO"
+url: "TODO"
+repository-code: "TODO"
+preferred-citation:
+  type: article
+  title: "A Compositional Dual-Hand Action Recognition Method for an LLM-Driven Assembly Copilot in Human-Centric Manufacturing"
+  authors:
+    - family-names: "TODO"
+      given-names: "TODO"
+  journal: "TODO"
+  year: 2026
+  doi: "TODO"

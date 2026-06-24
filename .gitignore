@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+*.local.yaml
+
+# Data, outputs, and weights
+data/raw/
+data/processed/
+outputs/
+output/
+runs/
+wandb/
+checkpoints/*
+!checkpoints/README.md
+*.ckpt
+*.pth
+*.pt
+*.onnx
+
+# Large media
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

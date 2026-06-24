@@ -1,0 +1,3 @@
+# Format:
+# video_filename verb_id manipulated_object_id target_object_id tool_id
+example_val_clip_0001.mp4 0 0 0 0

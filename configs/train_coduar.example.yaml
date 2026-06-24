@@ -1,0 +1,30 @@
+experiment_name: "coduar_release_placeholder"
+seed: 42
+
+model:
+  name: "vit_base_patch16_224_compositional_dual"
+  backbone: "VideoMAE/ViT-B"
+  num_frames: 16
+  input_size: 224
+  class_counts:
+    left_hand:
+      verbs: TODO
+      manipulated_objects: TODO
+      target_objects: TODO
+      tools: TODO
+    right_hand:
+      verbs: TODO
+      manipulated_objects: TODO
+      target_objects: TODO
+      tools: TODO
+
+training:
+  epochs: TODO
+  batch_size: TODO
+  learning_rate: TODO
+  weight_decay: TODO
+  loss: "compositional_element_loss_with_optional_action_loss"
+
+paths:
+  include: "configs/paths.local.yaml"
+  output_dir: "outputs/train/${experiment_name}"
