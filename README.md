@@ -83,13 +83,9 @@ For reproducibility, readers should first install the shared dependencies above,
 
 ## Demo
 
-We presents a compressed demonstration video for the Assembly Copilot.
+We present a compressed demonstration preview for the Assembly Copilot.
 
-<video controls width="100%">
-  <source src="assets/demo/demo480_24fps.mp4" type="video/mp4">
-  Your browser does not support embedded video. You can download or view the demo at
-  <a href="assets/demo/demo480_24fps.mp4">assets/demo/demo480_24fps.mp4</a>.
-</video>
+![Assembly Copilot demo](assets/demo/demo.gif)
 
 
 ## Citation
