@@ -87,7 +87,9 @@ We provide a compressed demonstration video for the Assembly Copilot. Please fin
 
 Here is a gif.
 
-![Assembly Copilot demo](assets/demo/demo.gif)
+<p align="center">
+  <img src="assets/demo/demo.gif" alt="Assembly Copilot demo" width="900">
+</p>
 
 
 ## Citation
