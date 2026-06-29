@@ -1,0 +1,400 @@
+{
+  "description": "Technical knowledge base K: procedures and critical parameters for PT (Penlight) gear-box assembly tasks (HA-ViD case study).",
+  "tasks": {
+    "sftg1": {
+      "task_id": "sftg1",
+      "task_name": "Screw Shaft into Gear Hole 1",
+      "procedure": [
+        "1. Pick up the shaft.",
+        "2. Locate Gear Hole 1 on the gear plate.",
+        "3. Align the longer threaded end of the shaft with Gear Hole 1.",
+        "4. Begin threading by hand — turn clockwise with light downward pressure.",
+        "5. Continue turning by hand until the shaft is finger-tight (resistance clearly increases).",
+        "6. Do not over-tighten by hand; the wrench step follows."
+      ],
+      "critical_parameters": [
+        {"parameter": "Rotation direction", "value": "clockwise", "unit": null, "note": "Counter-clockwise will strip the thread"},
+        {"parameter": "Hand-tighten only", "value": "finger-tight", "unit": null, "note": "Final torque applied in sftg1ws using Wrench-Shaft"},
+        {"parameter": "Shaft orientation", "value": "Gear Hole 1", "unit": null, "note": "Do not confuse with Gear Hole 2 — holes are adjacent"}
+      ],
+      "common_errors": [
+        "Screwing the shorter threaded end of the shaft into Gear Hole 1",
+        "Cross-threading due to misalignment before turning",
+        "Over-tightening by hand — can damage thread before wrench step"
+      ],
+      "estimated_duration_seconds": 27.7
+    },
+    "sftg1ws": {
+      "task_id": "sftg1ws",
+      "task_name": "Screw Shaft into Gear Hole 1 using Wrench-Shaft",
+      "procedure": [
+        "1. Retrieve the Wrench-Shaft.",
+        "2. Fit the wrench onto the shaft head at Gear Hole 1.",
+        "3. Apply controlled clockwise torque until the shaft is firmly seated.",
+        "4. Stop when resistance sharply increases — do not force further.",
+        "5. Verify the shaft does not wobble; it should be rigid in the gear plate.",
+        "6. Return the Wrench-Shaft to the tool tray."
+      ],
+      "critical_parameters": [
+        {"parameter": "Tool", "value": "Wrench-Shaft only", "unit": null, "note": "Do not substitute with pliers — will damage shaft head"},
+        {"parameter": "Final feel", "value": "firm, no wobble", "unit": null, "note": "Wobble indicates insufficient torque"},
+        {"parameter": "Stop condition", "value": "sharp resistance increase", "unit": null, "note": "Over-torquing will strip the housing thread"}
+      ],
+      "common_errors": [
+        "Using wrong tool (Wrench-Nut instead of Wrench-Shaft)",
+        "Under-torquing — shaft wobbles and will loosen during operation",
+        "Over-torquing — strips gear housing thread"
+      ],
+      "estimated_duration_seconds": 18.7
+    },
+    "sftg2": {
+      "task_id": "sftg2",
+      "task_name": "Screw Shaft into Gear Hole 2",
+      "procedure": [
+        "1. Pick up the shaft.",
+        "2. Locate Gear Hole 2 on the gear plate.",
+        "3. Align the longer threaded end of the shaft with Gear Hole 2.",
+        "4. Begin threading by hand — turn clockwise with light downward pressure.",
+        "5. Continue turning by hand until finger-tight.",
+        "6. Do not over-tighten by hand; the wrench step follows."
+      ],
+      "critical_parameters": [
+        {"parameter": "Rotation direction", "value": "clockwise", "unit": null, "note": "Counter-clockwise will strip the thread"},
+        {"parameter": "Hand-tighten only", "value": "finger-tight", "unit": null, "note": "Final torque applied in sftg2ws using Wrench-Shaft"},
+        {"parameter": "Shaft orientation", "value": "Gear Hole 2", "unit": null, "note": "Do not confuse with Gear Hole 1"}
+      ],
+      "common_errors": [
+        "Screwing the shorter threaded end of the shaft into Gear Hole 2",
+        "Cross-threading due to initial misalignment"
+      ],
+      "estimated_duration_seconds": 22.1
+    },
+    "sftg2ws": {
+      "task_id": "sftg2ws",
+      "task_name": "Screw Shaft into Gear Hole 2 using Wrench-Shaft",
+      "procedure": [
+        "1. Retrieve the Wrench-Shaft.",
+        "2. Fit the wrench onto the shaft head at Gear Hole 2.",
+        "3. Apply controlled clockwise torque until firmly seated.",
+        "4. Stop when resistance sharply increases.",
+        "5. Verify no wobble in the shaft.",
+        "6. Return the Wrench-Shaft to the tool tray."
+      ],
+      "critical_parameters": [
+        {"parameter": "Tool", "value": "Wrench-Shaft only", "unit": null, "note": "Same tool as sftg1ws"},
+        {"parameter": "Final feel", "value": "firm, no wobble", "unit": null, "note": "Match tightness of Shaft 1 for symmetric load"},
+        {"parameter": "Stop condition", "value": "sharp resistance increase", "unit": null, "note": "Symmetric torque on both shafts is important"}
+      ],
+      "common_errors": [
+        "Using wrong tool (Wrench-Nut instead of Wrench-Shaft)",
+        "Under-torquing — shaft wobbles and will loosen during operation"
+      ],
+      "estimated_duration_seconds": 17.3
+    },
+    "sspg3": {
+      "task_id": "sspg3",
+      "task_name": "Screw Phillips Screw into Gear Hole 3",
+      "procedure": [
+        "1. Pick up the Phillips screw.",
+        "2. Locate Gear Hole 3 on the gear plate.",
+        "3. Align the screw tip with the hole across the hole on the Worm Gear.",
+        "4. Begin threading clockwise by hand — apply gentle downward pressure.",
+        "5. Finger-tighten until resistance increases.",
+        "6. Screwdriver tightening follows in sspg3dp."
+      ],
+      "critical_parameters": [
+        {"parameter": "Screw type", "value": "Phillips head", "unit": null, "note": "Ensure correct screw is used — not flat-head"},
+        {"parameter": "Target hole", "value": "Gear Hole 3", "unit": null, "note": "Critical for worm gear alignment"},
+        {"parameter": "Hand-tighten", "value": "finger-tight only", "unit": null, "note": "Over-tightening by hand damages the Phillips head"}
+      ],
+      "common_errors": [
+        "Wrong screw type (flat-head instead of Phillips)",
+        "Screwing without the Worm Gear",
+        "Cross-threading — always align before turning"
+      ],
+      "estimated_duration_seconds": 21.1
+    },
+    "sspg3dp": {
+      "task_id": "sspg3dp",
+      "task_name": "Screw Phillips Screw into Gear Hole 3 using Phillips Screwdriver",
+      "procedure": [
+        "1. Retrieve the Phillips Screwdriver.",
+        "2. Seat the screwdriver bit firmly into the screw head — ensure full engagement.",
+        "3. Apply clockwise torque with steady downward pressure.",
+        "4. Stop when the screw is fully seated and resistance sharply increases.",
+        "5. Do not cam-out (slip) — this damages the screw head.",
+        "6. Return the Phillips Screwdriver."
+      ],
+      "critical_parameters": [
+        {"parameter": "Tool", "value": "Phillips Screwdriver", "unit": null, "note": "Ensure correct bit size — PH1 or PH2 as specified"},
+        {"parameter": "Engagement", "value": "full bit-in-head contact", "unit": null, "note": "Partial engagement causes cam-out and head damage"},
+        {"parameter": "Final state", "value": "fully seated, flush", "unit": null, "note": "Screw head should be flush with or slightly below housing surface"}
+      ],
+      "common_errors": [
+        "Partial bit engagement causing cam-out and stripped screw head",
+        "Under-tightening — screw will loosen under vibration",
+        "Wrong screwdriver size"
+      ],
+      "estimated_duration_seconds": 19.2
+    },
+    "pgwg3": {
+      "task_id": "pgwg3",
+      "task_name": "Place Worm Gear onto Gear Hole 3",
+      "procedure": [
+        "1. Pick up the Worm Gear component.",
+        "2. Orient the worm gear so its hole aligns with the Gear Hole 3 on the gear plate.",
+        "3. Lower the worm gear onto the plate.",
+        "4. Ensure the worm gear meshes with the adjacent gear teeth, if the adjacent gear teeth are not present, skip this step."
+      ],
+      "critical_parameters": [
+        {"parameter": "Orientation", "value": "aling the hole on the worm gear with the Gear Hole 3 on the gear plate", "unit": null, "note": "Incorrect orientation prevents gear meshing"},
+        {"parameter": "Gear mesh", "value": "worm threads engage adjacent gear", "unit": null, "note": "Verify mesh before proceeding — misalignment causes binding"},
+        {"parameter": "Rotational freedom", "value": "should rotate freely by hand", "unit": null, "note": "Resistance indicates misalignment or wrong part"}
+      ],
+      "common_errors": [
+        "Incorrect orientation",
+        "Gear not meshing — placed on plate but not engaged with adjacent gear"
+      ],
+      "estimated_duration_seconds": 8.4
+    },
+    "iplf1": {
+      "task_id": "iplf1",
+      "task_name": "Insert Large Placer onto Shaft 1",
+      "procedure": [
+        "1. Pick up the Large Placer.",
+        "2. Push the placer down onto Shaft 1.",
+        "3. Confirm the placer seats firmly on the Shaft 1."
+      ],
+      "critical_parameters": [
+        {"parameter": "Part", "value": "Large Placer (not Small Placer)", "unit": null, "note": "Large Placer has larger inner diameter — verify before placing"},
+        {"parameter": "Target shaft", "value": "Shaft 1", "unit": null, "note": "Do not confuse with Shaft 2"},
+        {"parameter": "Seating", "value": "fully seated, no rocking", "unit": null, "note": "Partial seating misaligns the Large Gear"}
+      ],
+      "common_errors": [
+        "Using Small Placer instead of Large Placer — will not seat correctly",
+        "Placing on Shaft 2 instead of Shaft 1",
+        "Partial seating — placer tilted on shaft"
+      ],
+      "estimated_duration_seconds": 7.9
+    },
+    "iplf2": {
+      "task_id": "iplf2",
+      "task_name": "Insert Large Placer onto Shaft 2",
+      "procedure": [
+        "1. Pick up the Large Placer.",
+        "2. Push the placer down onto Shaft 2.",
+        "3. Confirm the placer seats firmly on the Shaft 2."
+      ],
+      "critical_parameters": [
+        {"parameter": "Part", "value": "Large Placer", "unit": null, "note": "Same part as used on Shaft 1"},
+        {"parameter": "Target shaft", "value": "Shaft 2", "unit": null, "note": "Symmetric counterpart to iplf1"},
+        {"parameter": "Seating", "value": "fully seated, no rocking", "unit": null, "note": "Partial seating misaligns the Small Gear"}
+      ],
+      "common_errors": [
+        "Using Small Placer instead of Large Placer — will not seat correctly",
+        "Placing on Shaft 1 instead of Shaft 2",
+        "Partial seating — placer tilted on shaft"
+      ],
+      "estimated_duration_seconds": 8.4
+    },
+    "iglf1": {
+      "task_id": "iglf1",
+      "task_name": "Insert Large Gear onto Shaft 1",
+      "procedure": [
+        "1. Pick up the Large Gear.",
+        "2. Align the gear bore with Shaft 1 (flat plate facing downward).",
+        "3. Lower the gear onto the shaft util it seats firmly on the Large Placer.",
+        "4. Ensure the gear teeth mesh correctly with the adjacent gears, if the adjacent gears are not present, skip this step."
+      ],
+      "critical_parameters": [
+        {"parameter": "Part", "value": "Large Gear", "unit": null, "note": "Gears are visually similar — verify by comparing diameter"},
+        {"parameter": "Target", "value": "Shaft 1, on top of Large Placer", "unit": null, "note": "Large Placer must be seated before this step"},
+        {"parameter": "Orientation", "value": "flat plate facing downward", "unit": null, "note": "flat plate seats on the Large Placer"},
+        {"parameter": "Gear mesh", "value": "teeth engaged with the adjacent gears", "unit": null, "note": "Verify mesh — binding indicates misalignment"}
+      ],
+      "common_errors": [
+        "Using Small Gear instead of Large Gear",
+        "Inserting before Large Placer is seated",
+        "Facing the flat plate upward instead of downward",
+        "Gear not meshing with the adjacent gears"
+      ],
+      "estimated_duration_seconds": 10.4
+    },
+    "igsf2": {
+      "task_id": "igsf2",
+      "task_name": "Insert Small Gear onto Shaft 2",
+      "procedure": [
+        "1. Pick up the Small Gear.",
+        "2. Align the gear bore with Shaft 2 (flat plate facing downward).",
+        "3. Lower the gear onto the shaft util it seats firmly on the Large Placer.",
+        "4. Ensure the gear teeth mesh correctly with the adjacent gears, if the adjacent gears are not present, skip this step."
+      ],
+      "critical_parameters": [
+        {"parameter": "Part", "value": "Small Gear", "unit": null, "note": "Gears are visually similar — verify by comparing diameter"},
+        {"parameter": "Target", "value": "Shaft 2, on top of Large Placer", "unit": null, "note": "Large Placer must be seated before this step"},
+        {"parameter": "Orientation", "value": "flat plate facing downward", "unit": null, "note": "flat plate seats on the Large Placer"},
+        {"parameter": "Gear mesh", "value": "teeth engaged with the adjacent gears", "unit": null, "note": "Verify mesh — binding indicates misalignment"}
+      ],
+      "common_errors": [
+        "Using Large Gear instead of Small Gear",
+        "Inserting before Large Placer is seated",
+        "Facing the flat plate upward instead of downward",
+        "Gear not meshing with the adjacent gears"
+      ],
+      "estimated_duration_seconds": 10.5
+    },
+    "ipsf1": {
+      "task_id": "ipsf1",
+      "task_name": "Insert Small Placer onto Shaft 1",
+      "procedure": [
+        "1. Pick up the Small Placer.",
+        "2. Place the Small Placer onto Shaft 1 on top of the Large Gear.",
+        "3. Push down until it seats against the top of the Large Gear.",
+        "4. Confirm the Small Placer is flat and fully seated."
+      ],
+      "critical_parameters": [
+        {"parameter": "Part", "value": "Small Placer", "unit": null, "note": "Goes above Large Gear — do not confuse with Large Placer"},
+        {"parameter": "Position", "value": "on top of Large Gear, Shaft 1", "unit": null, "note": "Order: Gear Plate → Large Placer → Large Gear → Small Placer → Nut"},
+        {"parameter": "Seating", "value": "flat, fully seated", "unit": null, "note": "Tilted placer will cause nut to seat incorrectly"}
+      ],
+      "common_errors": [
+        "Using Large Placer instead of Small Placer",
+        "Incorrect assembly order — Small Placer placed before Large Gear",
+        "Placer seated at angle"
+      ],
+      "estimated_duration_seconds": 7.6
+    },
+    "ipsf2": {
+      "task_id": "ipsf2",
+      "task_name": "Insert Small Placer onto Shaft 2",
+      "procedure": [
+        "1. Pick up the Small Placer.",
+        "2. Place the Small Placer onto Shaft 2 on top of the Small Gear.",
+        "3. Push down until it seats against the top of the Small Gear.",
+        "4. Confirm the Small Placer is flat and fully seated."
+      ],
+      "critical_parameters": [
+        {"parameter": "Part", "value": "Small Placer", "unit": null, "note": "Goes above Small Gear — do not confuse with Large Placer"},
+        {"parameter": "Position", "value": "on top of Small Gear, Shaft 2", "unit": null, "note": "Order: Gear Plate → Large Placer → Large Gear → Small Placer → Nut"},
+        {"parameter": "Seating", "value": "flat, fully seated", "unit": null, "note": "Tilted placer will cause nut to seat incorrectly"}
+      ],
+      "common_errors": [
+        "Using Large Placer instead of Small Placer",
+        "Incorrect assembly order — Small Placer placed before Small Gear",
+        "Placer seated at angle"
+      ],
+      "estimated_duration_seconds": 9.9
+    },
+    "sntf1": {
+      "task_id": "sntf1",
+      "task_name": "Screw Nut onto Shaft 1",
+      "procedure": [
+        "1. Pick up a Nut.",
+        "2. Place the Nut onto the shorter threaded end of Shaft 1 (above Small Placer).",
+        "3. Begin threading clockwise by hand.",
+        "4. Finger-tighten until the Nut contacts the Small Placer.",
+        "5. Wrench tightening follows."
+      ],
+      "critical_parameters": [
+        {"parameter": "Hand-start turns", "value": "≥5 turns", "unit": "turns", "note": "Prevents cross-threading"},
+        {"parameter": "Finger-tight only", "value": "until Nut contacts Small Placer", "unit": null, "note": "Final torque applied in sntf1wn"},
+        {"parameter": "Shaft", "value": "Shaft 1", "unit": null, "note": "Ensure Nut is on correct the Shaft"}
+      ],
+      "common_errors": [
+        "Cross-threading — always hand-start before using wrench",
+        "Over-tightening by hand",
+        "Wrong shaft"
+      ],
+      "estimated_duration_seconds": 21.3
+    },
+    "sntf1wn": {
+      "task_id": "sntf1wn",
+      "task_name": "Screw Nut onto Shaft 1 using Wrench-Nut",
+      "procedure": [
+        "1. Retrieve the Wrench-Nut.",
+        "2. Fit the wrench onto the Nut on Shaft 1.",
+        "3. Tighten clockwise until firmly seated — sharp resistance indicates full tightening.",
+        "4. Verify the assembly stack (placer + gear + placer + nut) is secure.",
+        "5. Return the Wrench-Nut."
+      ],
+      "critical_parameters": [
+        {"parameter": "Tool", "value": "Wrench-Nut", "unit": null, "note": "Do not use Wrench-Shaft — different jaw size"},
+        {"parameter": "Stop condition", "value": "sharp resistance, firm assembly stack", "unit": null, "note": "Over-torquing can crack the gear plate"},
+        {"parameter": "Verify stack integrity", "value": "no play in gear", "unit": null, "note": "Gear should be retained with no axial movement"}
+      ],
+      "common_errors": [
+        "Using Wrench-Shaft instead of Wrench-Nut",
+        "Over-torquing — risk of damage",
+        "Nut not fully seated on placer before using wrench"
+      ],
+      "estimated_duration_seconds": 19.0
+    },
+    "sntf2": {
+      "task_id": "sntf2",
+      "task_name": "Screw Nut onto Shaft 2",
+      "procedure": [
+        "1. Pick up a Nut.",
+        "2. Place the Nut onto the shorter threaded end of Shaft 2 (above Small Placer).",
+        "3. Begin threading clockwise by hand.",
+        "4. Finger-tighten until the Nut contacts the Small Placer.",
+        "5. Wrench tightening follows."
+      ],
+      "critical_parameters": [
+        {"parameter": "Hand-start turns", "value": "≥5 turns", "unit": "turns", "note": "Prevents cross-threading"},
+        {"parameter": "Finger-tight only", "value": "until Nut contacts Small Placer", "unit": null, "note": "Final torque applied in sntf1wn"},
+        {"parameter": "Shaft", "value": "Shaft 2", "unit": null, "note": "Ensure Nut is on correct the Shaft"}
+      ],
+      "common_errors": [
+        "Cross-threading — always hand-start before using wrench",
+        "Over-tightening by hand",
+        "Wrong shaft"
+      ],
+      "estimated_duration_seconds": 19.6
+    },
+    "sntf2wn": {
+      "task_id": "sntf2wn",
+      "task_name": "Screw Nut onto Shaft 2 using Wrench-Nut",
+      "procedure": [
+        "1. Retrieve the Wrench-Nut.",
+        "2. Fit the wrench onto the Nut on Shaft 2.",
+        "3. Tighten clockwise until firmly seated — sharp resistance indicates full tightening.",
+        "4. Verify the assembly stack (placer + gear + placer + nut) is secure.",
+        "5. Return the Wrench-Nut."
+      ],
+      "critical_parameters": [
+        {"parameter": "Tool", "value": "Wrench-Nut", "unit": null, "note": "Do not use Wrench-Shaft — different jaw size"},
+        {"parameter": "Stop condition", "value": "sharp resistance, firm assembly stack", "unit": null, "note": "Over-torquing can crack the gear plate"},
+        {"parameter": "Verify stack integrity", "value": "no play in gear", "unit": null, "note": "Gear should be retained with no axial movement"}
+      ],
+      "common_errors": [
+        "Using Wrench-Shaft instead of Wrench-Nut",
+        "Over-torquing — risk of damage",
+        "Nut not fully seated on placer before using wrench"
+      ],
+      "estimated_duration_seconds": 17.6
+    },
+    "rgw": {
+      "task_id": "rgw",
+      "task_name": "Rotate Worm Gear",
+      "procedure": [
+        "1. Confirm all three parallel assembly chains are complete (sntf1wn, sntf2wn, sspg3dp all done).",
+        "2. Grasp the Worm Gear lightly between thumb and forefinger.",
+        "3. Rotate the Worm Gear a full 360° in both directions.",
+        "4. Verify the gear train (Large Gear on Shaft 1) engages and rotates smoothly.",
+        "5. Any binding or resistance indicates a misalignment in previous steps.",
+        "6. If smooth rotation is confirmed, the sub-assembly is complete."
+      ],
+      "critical_parameters": [
+        {"parameter": "Prerequisite", "value": "all 3 chains complete", "unit": null, "note": "sntf1wn + sntf2wn + sspg3dp must all be done first"},
+        {"parameter": "Rotation test", "value": "full 360° both directions", "unit": null, "note": "One-direction rotation may hide binding"},
+        {"parameter": "Expected feel", "value": "smooth, no binding or grinding", "unit": null, "note": "Any roughness requires disassembly to identify root cause"}
+      ],
+      "common_errors": [
+        "Performing Rotate Worm Gear before all prerequisite steps are complete",
+        "Only rotating one direction — misses binding in reverse",
+        "Accepting slight binding as normal — investigate and correct"
+      ],
+      "estimated_duration_seconds": 12.8
+    }
+  }
+}

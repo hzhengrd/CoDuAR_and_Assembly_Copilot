@@ -1,0 +1,25 @@
+# HAVID Compositional Action Mapping
+# Format: class_id label verb_id manip_obj_id target_obj_id tool_id
+#
+0 iglf1 1 1 1 0
+1 igsf2 1 2 2 0
+2 iplf1 1 3 1 0
+3 iplf2 1 3 2 0
+4 ipsf1 1 4 1 0
+5 ipsf2 1 4 2 0
+6 null 0 0 0 0
+7 pdp 2 5 0 0
+8 pgwg3 2 6 3 0
+9 pwn 2 7 0 0
+10 pws 2 8 0 0
+11 rgw 3 6 0 0
+12 sftg1 4 9 4 0
+13 sftg1ws 4 9 4 3
+14 sftg2 4 9 5 0
+15 sftg2ws 4 9 5 3
+16 sntf1 4 10 1 0
+17 sntf1wn 4 10 1 2
+18 sntf2 4 10 2 0
+19 sntf2wn 4 10 2 2
+20 sspg3 4 11 3 0
+21 sspg3dp 4 11 3 1

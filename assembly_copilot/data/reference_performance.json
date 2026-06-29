@@ -1,0 +1,246 @@
+{
+  "description": "Reference performance computed from HA-ViD PT ground-truth annotations (pt_lh / pt_rh, 12 sessions: S0T0\u2013S0T9V0 + PE05 + PE06). Fusion: null+task\u2192task, A+B\u2192'A|B'. Gaps <=1 s merged. FPS=15. Fragments <1.5s filtered as annotation glitches.",
+  "population_size": 12,
+  "fps": 15.0,
+  "min_valid_duration_seconds": 1.5,
+  "collection_notes": "Idle = null-label frames after gap merging. Side activities (pdp/pwn/pws) are excluded from both task and idle counts. Thresholds for System 2 advisory: idle_fraction > mean+std \u2192 'high idle'; task_duration > mean+2*std \u2192 'slow on this task'.",
+  "idle_reference": {
+    "mean_idle_fraction": 0.077,
+    "std_idle_fraction": 0.02,
+    "mean_idle_seconds": 22.5,
+    "std_idle_seconds": 6.6,
+    "high_idle_threshold_fraction": 0.097,
+    "sessions": {
+      "PE05_S0T9V0_skip_large_spacer_iplf1.txt": {
+        "total_seconds": 264.4,
+        "idle_seconds": 18.7,
+        "idle_fraction": 0.071,
+        "active_task_seconds": 232.6,
+        "side_activity_seconds": 13.1
+      },
+      "PE06_S0T3V0_frames_1_3107_plus_3431_3618.txt": {
+        "total_seconds": 217.7,
+        "idle_seconds": 23.3,
+        "idle_fraction": 0.107,
+        "active_task_seconds": 175.9,
+        "side_activity_seconds": 18.5
+      },
+      "S0T0V0.txt": {
+        "total_seconds": 264.1,
+        "idle_seconds": 26.5,
+        "idle_fraction": 0.1,
+        "active_task_seconds": 240.2,
+        "side_activity_seconds": 5.3
+      },
+      "S0T1V0.txt": {
+        "total_seconds": 304.6,
+        "idle_seconds": 22.5,
+        "idle_fraction": 0.074,
+        "active_task_seconds": 269.6,
+        "side_activity_seconds": 12.5
+      },
+      "S0T2V0.txt": {
+        "total_seconds": 265.0,
+        "idle_seconds": 18.7,
+        "idle_fraction": 0.07,
+        "active_task_seconds": 230.0,
+        "side_activity_seconds": 16.3
+      },
+      "S0T3V0.txt": {
+        "total_seconds": 370.6,
+        "idle_seconds": 34.1,
+        "idle_fraction": 0.092,
+        "active_task_seconds": 307.7,
+        "side_activity_seconds": 28.8
+      },
+      "S0T4V0.txt": {
+        "total_seconds": 320.0,
+        "idle_seconds": 29.7,
+        "idle_fraction": 0.093,
+        "active_task_seconds": 272.9,
+        "side_activity_seconds": 15.9
+      },
+      "S0T5V0.txt": {
+        "total_seconds": 312.0,
+        "idle_seconds": 7.8,
+        "idle_fraction": 0.025,
+        "active_task_seconds": 287.1,
+        "side_activity_seconds": 17.1
+      },
+      "S0T6V0.txt": {
+        "total_seconds": 347.0,
+        "idle_seconds": 29.2,
+        "idle_fraction": 0.084,
+        "active_task_seconds": 294.3,
+        "side_activity_seconds": 23.5
+      },
+      "S0T7V0.txt": {
+        "total_seconds": 269.4,
+        "idle_seconds": 19.9,
+        "idle_fraction": 0.074,
+        "active_task_seconds": 234.1,
+        "side_activity_seconds": 15.1
+      },
+      "S0T8V0.txt": {
+        "total_seconds": 337.8,
+        "idle_seconds": 21.4,
+        "idle_fraction": 0.063,
+        "active_task_seconds": 296.9,
+        "side_activity_seconds": 19.5
+      },
+      "S0T9V0.txt": {
+        "total_seconds": 275.8,
+        "idle_seconds": 18.7,
+        "idle_fraction": 0.068,
+        "active_task_seconds": 243.9,
+        "side_activity_seconds": 13.2
+      }
+    }
+  },
+  "tasks": {
+    "iglf1": {
+      "task_id": "iglf1",
+      "n": 12,
+      "mean_seconds": 10.4,
+      "std_seconds": 2.1,
+      "min_seconds": 6.1,
+      "max_seconds": 13.9
+    },
+    "igsf2": {
+      "task_id": "igsf2",
+      "n": 11,
+      "mean_seconds": 10.5,
+      "std_seconds": 2.0,
+      "min_seconds": 7.1,
+      "max_seconds": 13.9
+    },
+    "iplf1": {
+      "task_id": "iplf1",
+      "n": 11,
+      "mean_seconds": 7.9,
+      "std_seconds": 1.7,
+      "min_seconds": 5.5,
+      "max_seconds": 11.3
+    },
+    "iplf2": {
+      "task_id": "iplf2",
+      "n": 10,
+      "mean_seconds": 8.4,
+      "std_seconds": 2.3,
+      "min_seconds": 5.3,
+      "max_seconds": 13.4
+    },
+    "ipsf1": {
+      "task_id": "ipsf1",
+      "n": 12,
+      "mean_seconds": 7.6,
+      "std_seconds": 1.4,
+      "min_seconds": 5.6,
+      "max_seconds": 10.7
+    },
+    "ipsf2": {
+      "task_id": "ipsf2",
+      "n": 12,
+      "mean_seconds": 9.9,
+      "std_seconds": 1.6,
+      "min_seconds": 6.6,
+      "max_seconds": 12.5
+    },
+    "pgwg3": {
+      "task_id": "pgwg3",
+      "n": 14,
+      "mean_seconds": 8.4,
+      "std_seconds": 2.4,
+      "min_seconds": 3.7,
+      "max_seconds": 10.9
+    },
+    "rgw": {
+      "task_id": "rgw",
+      "n": 5,
+      "mean_seconds": 12.8,
+      "std_seconds": 3.8,
+      "min_seconds": 8.2,
+      "max_seconds": 19.8
+    },
+    "sftg1": {
+      "task_id": "sftg1",
+      "n": 12,
+      "mean_seconds": 27.7,
+      "std_seconds": 4.0,
+      "min_seconds": 21.9,
+      "max_seconds": 37.0
+    },
+    "sftg1ws": {
+      "task_id": "sftg1ws",
+      "n": 8,
+      "mean_seconds": 18.7,
+      "std_seconds": 2.4,
+      "min_seconds": 16.7,
+      "max_seconds": 23.1
+    },
+    "sftg2": {
+      "task_id": "sftg2",
+      "n": 12,
+      "mean_seconds": 22.1,
+      "std_seconds": 3.1,
+      "min_seconds": 16.5,
+      "max_seconds": 27.8
+    },
+    "sftg2ws": {
+      "task_id": "sftg2ws",
+      "n": 8,
+      "mean_seconds": 17.3,
+      "std_seconds": 4.4,
+      "min_seconds": 13.2,
+      "max_seconds": 24.3
+    },
+    "sntf1": {
+      "task_id": "sntf1",
+      "n": 12,
+      "mean_seconds": 21.3,
+      "std_seconds": 8.4,
+      "min_seconds": 10.9,
+      "max_seconds": 40.8
+    },
+    "sntf1wn": {
+      "task_id": "sntf1wn",
+      "n": 12,
+      "mean_seconds": 19.0,
+      "std_seconds": 4.5,
+      "min_seconds": 11.3,
+      "max_seconds": 25.6
+    },
+    "sntf2": {
+      "task_id": "sntf2",
+      "n": 11,
+      "mean_seconds": 19.6,
+      "std_seconds": 4.8,
+      "min_seconds": 11.1,
+      "max_seconds": 31.0
+    },
+    "sntf2wn": {
+      "task_id": "sntf2wn",
+      "n": 11,
+      "mean_seconds": 17.6,
+      "std_seconds": 5.3,
+      "min_seconds": 11.2,
+      "max_seconds": 26.9
+    },
+    "sspg3": {
+      "task_id": "sspg3",
+      "n": 12,
+      "mean_seconds": 21.1,
+      "std_seconds": 6.2,
+      "min_seconds": 10.3,
+      "max_seconds": 32.3
+    },
+    "sspg3dp": {
+      "task_id": "sspg3dp",
+      "n": 13,
+      "mean_seconds": 19.2,
+      "std_seconds": 5.8,
+      "min_seconds": 7.9,
+      "max_seconds": 31.9
+    }
+  }
+}

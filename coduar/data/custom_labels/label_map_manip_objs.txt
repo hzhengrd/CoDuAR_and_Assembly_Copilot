@@ -1,0 +1,13 @@
+0 null
+1 gl
+2 gs
+3 pl
+4 ps
+5 dp
+6 gw
+7 wn
+8 ws
+9 ft
+10 nt
+11 sp
+

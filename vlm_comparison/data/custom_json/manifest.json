@@ -1,0 +1,33 @@
+{
+  "input_dir": "data/single_stream_multi_window",
+  "video_root": "data/single_stream_multi_window",
+  "recipes": {
+    "direct_semantic": "Per-hand question answered by the full semantic action sentence.",
+    "compositional": "Per-hand compositional slot QA plus holistic left/right compositional QA.",
+    "holistic_multiple_choice": "Holistic left/right action recognition with paired multiple-choice options.",
+    "operator_holistic_constrained": "Operator-level direct holistic action generation with the valid holistic action set in the prompt.",
+    "operator_compositional_constrained": "Operator-level left/right slot generation with valid value sets in the prompt.",
+    "operator_compositional_stage1": "Stage 1 curriculum: composition-only per-hand slot prediction.",
+    "operator_compositional_stage2": "Stage 2 curriculum: composition first, then per-hand action sentence reconstruction."
+  },
+  "splits": {
+    "train": {
+      "direct_semantic_samples": 21918,
+      "compositional_samples": 32877,
+      "holistic_mc_samples": 10959,
+      "operator_holistic_constrained_samples": 10959,
+      "operator_compositional_constrained_samples": 10959,
+      "operator_compositional_stage1_samples": 10959,
+      "operator_compositional_stage2_samples": 10959
+    },
+    "eval": {
+      "direct_semantic_samples": 8128,
+      "compositional_samples": 12192,
+      "holistic_mc_samples": 4064,
+      "operator_holistic_constrained_samples": 4064,
+      "operator_compositional_constrained_samples": 4064,
+      "operator_compositional_stage1_samples": 4064,
+      "operator_compositional_stage2_samples": 4064
+    }
+  }
+}

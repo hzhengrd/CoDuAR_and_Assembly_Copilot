@@ -1,0 +1,43 @@
+{
+  "description": "Task Precedence Graph for PT (Penlight) gear-box assembly (HA-ViD case study).",
+  "tasks": {
+    "sftg1":   "Screw Shaft into Gear Hole 1",
+    "sftg1ws": "Screw Shaft into Gear Hole 1 using Wrench-Shaft",
+    "sftg2":   "Screw Shaft into Gear Hole 2",
+    "sftg2ws": "Screw Shaft into Gear Hole 2 using Wrench-Shaft",
+    "sspg3":   "Screw Phillips Screw into Gear Hole 3",
+    "sspg3dp": "Screw Phillips Screw into Gear Hole 3 using Phillips Screwdriver",
+    "pgwg3":   "Place Worm Gear onto Gear Hole 3",
+    "iplf1":   "Insert Large Placer onto Shaft 1",
+    "iplf2":   "Insert Large Placer onto Shaft 2",
+    "iglf1":   "Insert Large Gear onto Shaft 1",
+    "igsf2":   "Insert Small Gear onto Shaft 2",
+    "rgw":     "Rotate Worm Gear",
+    "ipsf1":   "Insert Small Placer onto Shaft 1",
+    "ipsf2":   "Insert Small Placer onto Shaft 2",
+    "sntf1":   "Screw Nut onto Shaft 1",
+    "sntf1wn": "Screw Nut onto Shaft 1 using Wrench-Nut",
+    "sntf2":   "Screw Nut onto Shaft 2",
+    "sntf2wn": "Screw Nut onto Shaft 2 using Wrench-Nut"
+  },
+  "edges": [
+    ["sftg1",   "sftg1ws"],
+    ["sftg1ws", "iplf1"],
+    ["iplf1",   "iglf1"],
+    ["iglf1",   "ipsf1"],
+    ["ipsf1",   "sntf1"],
+    ["sntf1",   "sntf1wn"],
+    ["sntf1wn", "rgw"],
+    ["sftg2",   "sftg2ws"],
+    ["sftg2ws", "iplf2"],
+    ["iplf2",   "igsf2"],
+    ["igsf2",   "ipsf2"],
+    ["ipsf2",   "sntf2"],
+    ["sntf2",   "sntf2wn"],
+    ["sntf2wn", "rgw"],
+    ["pgwg3",   "sspg3"],
+    ["sspg3",   "sspg3dp"],
+    ["sspg3dp", "rgw"]
+  ],
+  "notes": "Three parallel entry chains, each starting from an independent root node: Chain 1 (sftg1→sftg1ws→iplf1→iglf1→ipsf1→sntf1→sntf1wn→rgw), Chain 2 (sftg2→sftg2ws→iplf2→igsf2→ipsf2→sntf2→sntf2wn→rgw), Chain 3 (pgwg3→sspg3→sspg3dp→rgw). Root nodes with no prerequisites: sftg1, sftg2, pgwg3. All three chains converge at rgw (Rotate Worm Gear) as the final verification step."
+}

@@ -1,0 +1,158 @@
+{
+  "description": "Multimedia asset database B for PT gear-box assembly (HA-ViD case study). Add real image/video URIs to assets/ folder as they become available.",
+  "assets": [
+    {
+      "asset_id": "A001",
+      "task_id": "sftg1",
+      "type": "image",
+      "uri": "assets/images/sftg1_shaft_alignment.jpg",
+      "caption": "Correct shaft alignment with Gear Hole 1 before threading.",
+      "tags": ["shaft", "gear_hole_1", "alignment", "threading"]
+    },
+    {
+      "asset_id": "A002",
+      "task_id": "sftg1ws",
+      "type": "image",
+      "uri": "assets/images/sftg1ws_wrench_engagement.jpg",
+      "caption": "Wrench-Shaft correctly engaged on shaft head at Gear Hole 1.",
+      "tags": ["wrench_shaft", "tightening", "gear_hole_1"]
+    },
+    {
+      "asset_id": "A003",
+      "task_id": "sftg2",
+      "type": "image",
+      "uri": "assets/images/sftg2_shaft_alignment.jpg",
+      "caption": "Correct shaft alignment with Gear Hole 2 before threading.",
+      "tags": ["shaft", "gear_hole_2", "alignment", "threading"]
+    },
+    {
+      "asset_id": "A004",
+      "task_id": "sftg2ws",
+      "type": "image",
+      "uri": "assets/images/sftg2ws_wrench_engagement.jpg",
+      "caption": "Wrench-Shaft engaged on shaft head at Gear Hole 2.",
+      "tags": ["wrench_shaft", "tightening", "gear_hole_2"]
+    },
+    {
+      "asset_id": "A005",
+      "task_id": "sspg3",
+      "type": "image",
+      "uri": "assets/images/sspg3_screw_alignment.jpg",
+      "caption": "Phillips screw aligned with Gear Hole 3 for hand-threading.",
+      "tags": ["phillips_screw", "gear_hole_3", "alignment"]
+    },
+    {
+      "asset_id": "A006",
+      "task_id": "sspg3dp",
+      "type": "image",
+      "uri": "assets/images/sspg3dp_screwdriver.jpg",
+      "caption": "Phillips Screwdriver fully seated in screw head at Gear Hole 3.",
+      "tags": ["phillips_screwdriver", "screw", "gear_hole_3", "tightening"]
+    },
+    {
+      "asset_id": "A007",
+      "task_id": "pgwg3",
+      "type": "image",
+      "uri": "assets/images/pgwg3_worm_gear_placement.jpg",
+      "caption": "Worm Gear placed onto Gear Hole 3 shaft, showing correct bore alignment and gear mesh.",
+      "tags": ["worm_gear", "gear_hole_3", "placement", "mesh"]
+    },
+    {
+      "asset_id": "A008",
+      "task_id": "iplf1",
+      "type": "image",
+      "uri": "assets/images/iplf1_large_placer.jpg",
+      "caption": "Large Placer seated on Shaft 1, flush against gear housing.",
+      "tags": ["large_placer", "shaft_1", "spacer", "seating"]
+    },
+    {
+      "asset_id": "A009",
+      "task_id": "iplf2",
+      "type": "image",
+      "uri": "assets/images/iplf2_large_placer.jpg",
+      "caption": "Large Placer seated on Shaft 2, matching Shaft 1 seating depth.",
+      "tags": ["large_placer", "shaft_2", "spacer", "seating"]
+    },
+    {
+      "asset_id": "A010",
+      "task_id": "iglf1",
+      "type": "image",
+      "uri": "assets/images/iglf1_large_gear.jpg",
+      "caption": "Large Gear seated on Shaft 1 above Large Placer, showing correct gear mesh.",
+      "tags": ["large_gear", "shaft_1", "gear_mesh", "insertion"]
+    },
+    {
+      "asset_id": "A011",
+      "task_id": "igsf2",
+      "type": "image",
+      "uri": "assets/images/igsf2_small_gear.jpg",
+      "caption": "Small Gear seated on Shaft 2 above Large Placer, meshing with worm gear.",
+      "tags": ["small_gear", "shaft_2", "gear_mesh", "insertion"]
+    },
+    {
+      "asset_id": "A012",
+      "task_id": "ipsf1",
+      "type": "image",
+      "uri": "assets/images/ipsf1_small_placer.jpg",
+      "caption": "Small Placer seated on Shaft 1 on top of Large Gear, showing correct stack order.",
+      "tags": ["small_placer", "shaft_1", "spacer", "stack_order"]
+    },
+    {
+      "asset_id": "A013",
+      "task_id": "ipsf2",
+      "type": "image",
+      "uri": "assets/images/ipsf2_small_placer.jpg",
+      "caption": "Small Placer seated on Shaft 2 on top of Small Gear.",
+      "tags": ["small_placer", "shaft_2", "spacer", "stack_order"]
+    },
+    {
+      "asset_id": "A014",
+      "task_id": "sntf1",
+      "type": "image",
+      "uri": "assets/images/sntf1_screw_nut.jpg",
+      "caption": "Screw nut at Shaft 1.",
+      "tags": ["screw", "nut", "shaft_1", "tightening"]
+    },
+    {
+      "asset_id": "A015",
+      "task_id": "sntf2",
+      "type": "image",
+      "uri": "assets/images/sntf2_screw_nut.jpg",
+      "caption": "Screw nut at Shaft 2.",
+      "tags": ["screw", "nut", "shaft_2", "tightening"]
+    },
+    {
+      "asset_id": "A016",
+      "task_id": "sntf1wn",
+      "type": "image",
+      "uri": "assets/images/sntf1wn_wrench_nut.jpg",
+      "caption": "Wrench-Nut engaged on nut at Shaft 1, showing correct jaw fit.",
+      "tags": ["wrench_nut", "nut", "shaft_1", "tightening"]
+    },
+    {
+      "asset_id": "A017",
+      "task_id": "sntf2wn",
+      "type": "image",
+      "uri": "assets/images/sntf2wn_wrench_nut.jpg",
+      "caption": "Wrench-Nut engaged on nut at Shaft 2.",
+      "tags": ["wrench_nut", "nut", "shaft_2", "tightening"]
+    },
+    {
+      "asset_id": "A018",
+      "task_id": "rgw",
+      "type": "image",
+      "uri": "assets/images/rgw_rotation_test.jpg",
+      "caption": "Final rotation test: Worm Gear being rotated to verify smooth gear train engagement.",
+      "tags": ["worm_gear", "rotation", "final_check", "verification"]
+    },
+    {
+      "asset_id": "A019",
+      "task_id": "rgw",
+      "type": "video",
+      "uri": "assets/videos/rgw_demo.mp4",
+      "caption": "Video demonstration of the final worm gear rotation test, showing expected smooth motion and both rotation directions.",
+      "tags": ["worm_gear", "rotation", "demo", "final_check"],
+      "duration_seconds": 15
+    }
+  ]
+}
