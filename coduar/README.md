@@ -9,6 +9,7 @@ The code in this folder is intended for reproducing the model training and evalu
 ```text
 coduar/
 |-- dataset/                                  # Video loading, augmentation, and dataset builders
+|-- data/                                     # Data of HA-ViD and the custom dataset, their compositional mapping files and scripts to prepare the data
 |-- models/                                   # CoDuAR model
 |-- script/
 |   `-- train.sh                              # Example training script
@@ -23,6 +24,16 @@ coduar/
 ## Data Organization
 
 CoDuAR uses separate left-hand and right-hand video clips from HA-ViD action recognition dataset (primitive task level). Please request HA-ViD from the [official HA-ViD website](https://iai-hrc.github.io/ha-vid).
+
+The custom data can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1SaAPRiS4NoaDxFXge_9AJpc5d379c9im?usp=sharing). 
+
+To process the custom data, using the provided script:
+```bash
+cd data
+bash prepare_custom_dataset.sh
+```
+
+The compositional mapping files are provided in `data/`.
 
 The default example script assumes the following structure under `coduar/`:
 
@@ -39,6 +50,13 @@ data/
         |-- videos_val/
         |-- train_list_compositional.txt
         `-- val_list_compositional.txt
+`-- custom_dataset/
+    |-- videos_train/
+    |-- videos_val/
+    |-- lh_train_list_compositional.txt
+    |-- rh_train_list_compositional.txt
+    |-- lh_val_list_compositional.txt
+    `-- rh_val_list_compositional.txt
 ```
 
 Each annotation file should contain one sample per line:
@@ -79,8 +97,13 @@ The validator checks line format, label ranges, class statistics, imbalance warn
 The main training entry point is `run_compositional_transformer.py`. The example script `script/train.sh` provides the default command for the CoDuAR transformer-decoder model:
 
 ```bash
-cd coduar
 bash script/train.sh
+```
+
+For traning the CoDuAR on the custom dataset, run:
+
+```bash
+bash script/train_custom_dataset.sh
 ```
 
 Before running the script, update the following variables in `script/train.sh` for the local environment:
@@ -96,6 +119,10 @@ The script trains `vit_base_patch16_224_compositional_dual_transformer` with han
 ## Evaluation
 
 To run evaluation only, pass `--eval` and resume from a trained checkpoint:
+
+```bash
+bash script/evaluate.sh
+```
 
 ```bash
 cd coduar
