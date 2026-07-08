@@ -1,15 +1,15 @@
 # Assembly Copilot
 
-This folder contains the implementation of **Assembly Copilot**, the LLM-driven assembly assistance demonstration built on top of CoDuAR predictions. The system uses CoDuAR as a perception module to convert video observations into compositional action elements, maps those elements to symbolic assembly tasks, tracks task progress against a task precedence graph, and invokes an LLM-based advisory agent for operator guidance and post-session review.
+This folder contains the implementation of **Assembly Copilot**, the LLM-driven assembly assistance system built on top of CoDuAR predictions. The system uses CoDuAR as a perception module to convert video observations into compositional action elements, maps those elements to symbolic assembly tasks, tracks task progress against a task precedence graph, and invokes an LLM-based advisory agent for operator guidance and post-session review.
 
-The code in this folder is intended for reproducing the demonstration workflow described in the paper. The CoDuAR model should be trained and evaluated first; this folder then uses a trained CoDuAR checkpoint, a demonstration video, and task-specific symbolic assets to run the interactive assistance system.
+The code in this folder is intended for reproducing the demonstration workflow described in the paper. The CoDuAR model should be trained first; this folder then uses a trained CoDuAR checkpoint, demonstration videos from the custom dataset see `coduar/data`, and task-specific symbolic assets to run the interactive assistance system.
 
 ## Folder Layout
 
 ```text
 assembly_copilot/
 |-- assets/
-|   `-- images/                    # Reference images rendered by the advisory interface
+|   `-- images/                     # Reference images rendered by the advisory interface
 |-- data/
 |   |-- tpg.json                    # Task precedence graph for the assembly procedure
 |   |-- knowledge_base.json         # Step-level procedural knowledge base

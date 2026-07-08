@@ -5,10 +5,10 @@
 cd "$(dirname "$0")/.." || exit
 
 # Configuration
-VIDEO="/home/hao/Polyphony/data/case_study/single_stream_pt/S0T7V0.mp4"
-CHECKPOINT="./output/compositional_transformer_single_stream_case_study/checkpoint-best.pth"
+VIDEO="Path to the video file"
+CHECKPOINT="Path to the CoDuAR checkpoint file trained on the custom dataset"
 
-# Model configuration
+# Model configuration, This is for the costom dataset.
 LH_NUM_VERBS=5
 LH_NUM_MANIP_OBJS=12
 LH_NUM_TARGET_OBJS=6
