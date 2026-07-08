@@ -91,6 +91,8 @@ Here is a gif.
   <img src="assets/demo/demo.gif" alt="Assembly Copilot demo" width="900">
 </p>
 
+## Additional evaluation results
+For your reference, the screenshots of System 2 evaluation have been uploaded to `additional_results/`.
 
 ## Citation
 
